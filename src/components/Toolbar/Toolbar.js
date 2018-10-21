@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import './Toolbar.css';
 
 const Toolbar = props => {
   return (
     <header className="toolbar">
       <nav className="toolbar__navigation">
-        <div />
+        <div>
+          <DrawerToggleButton />
+        </div>
         <div className="toolbar__logo">
           <Link to="/">The Logo</Link>
         </div>
